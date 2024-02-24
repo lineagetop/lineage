@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리니지서버</title>
+    <style>
+         /* CSS 스타일링 */
+         body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-container {
+            background-image: url('image/make.jpg'); /* 배경 이미지 추가 */
+            background-size: cover; /* 배경 이미지를 커버하는 크기로 조절 */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: left; /* 변경된 부분 */
+            cursor: pointer; /* 추가된 부분: 마우스 커서를 포인터로 변경 */
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 30px 40px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        /* 현재 선택된 메뉴에 대한 스타일 */
+        nav a.active {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* 공지사항 스타일 */
+        .notice {
+            background-color: #000000;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+        .notice h2 {
+            color: #666161;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .notice p {
+            color: #cec4c4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+<header onclick="goHome()"> <!-- 클릭 시 goHome() 함수 호출 -->
+    <h1>Lineage</h1>
+</header>
+<nav>
+    <a href="notice.html" class="active">공지사항</a>
+    <a href="guidebook.html">게임가이드북</a>
+    <a href="screenshots.html">스크린샷</a>
+    <a href="forum.html">자유게시판</a>
+    <a href="download.html">다운로드</a>
+</nav>
+</div>
+
+<section>
+    <!-- 공지사항 목록 -->
+    <div class="notice">
+        <h2>서버오픈2024년2월20일20시</h2>
+        <p>숨겨진계곡 레벨제한:30레벨<br>
+        버림받은자들의땅 레벨제한:60레벨<br>
+        테베오시리스의사막&티칼사원(시간제)<br>
+        몽환의섬(깃털)<br>
+        기란감옥(경험치)<br>
+        이 외의 사냥터는 아이템,아데나 등 기타사냥터</p>
+    </div>
+
+    <!-- 공지사항 목록 끝 -->
+</section>
+
+<footer>
+    <p>© 2024 게임사이트. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript 코드 추가 -->
+<script>
+    function goHome() {
+        window.location.href = "Index.html"; // 홈으로 이동
+    }
+</script>
+</body>
+</html>
