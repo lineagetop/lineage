@@ -1,97 +1,26 @@
+<!-- 첫화면 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리니지서버</title>
-    <style>
-        /* CSS 스타일링 */
-        body {
-            background-color: #000000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .header-container {
-            background-image: url('image/make.jpg'); /* 배경 이미지 추가 */
-            background-size: cover; /* 배경 이미지를 커버하는 크기로 조절 */
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
-            color: #fff;
-            padding: 10px 20px;
-            text-align: left; /* 변경된 부분 */
-            cursor: pointer; /* 추가된 부분: 마우스 커서를 포인터로 변경 */
-        }
-        nav {
-            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
-            padding: 30px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 30px 40px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-           /* 현재 선택된 메뉴에 대한 스타일 */
-           nav a.active {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .main {
-            color: #a70505;
-            text-decoration: none;
-            padding: 50px 80px;
-            text-align: center;
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="header-container">
-        <header onclick="goHome()"> <!-- 클릭 시 goHome() 함수 호출 -->
-        <h1>Lineage</h1>
-    </header>
-    <nav>
-        <a href="notice.html" >공지사항</a>
-        <a href="guidebook.html">게임가이드북</a>
-        <a href="screenshots.html">스크린샷</a>
-        <a href="forum.html">자유게시판</a>
-        <a href="download.html">다운로드</a>
-    </nav>
+    <div class="header-container" id="header-container">
 </div>
     
     <div class="main">저희 서버는 24시간 공성전이 오픈되어 있는 서버입니다.<br>
-        왕이 잠든사이 반왕이 성을 공격할 수도 있으며 성혈맹이 되면 아데나 획득치가 3배나 상승합니다.<br>
-        매주 일요일 저녁10시 보좌를 지키고 있는 군주에게 선물이 지급됩니다.<br><br>
-        그 누구든 제한이 없으며 단 성은 기란성만 존재할 뿐입니다
+        왕이 잠든사이 반왕이 성을 공격할 수도 있으며 성 혈맹 구성원이 되면 아데나 획득치가 3배나 상승합니다.<br>
+        <br>매주 일요일 저녁10시=보좌를 지키고 있는 군주에게 선물이 지급됩니다.<br>
+        <br>그 누구든 왕위의 제한이 없으며 월드의 왕이 될 수 있습니다.<br><br><br>
+         단, 취득 가능한 성은 기란성만 존재할 뿐입니다.
      </div>
 
 
-    <footer>
-        <p>© 2024 게임사이트. All rights reserved.</p>
-    </footer>
 
-     <!-- JavaScript 코드 추가 -->
-     <script>
-        function goHome() {
-            window.location.href = "index.html"; // 홈으로 이동
-        }
-    </script>
+<!-- 외부 JavaScript 파일 연결 -->
+<script src="scripts.js"></script>
 </body>
 </html>

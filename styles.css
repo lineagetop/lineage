@@ -1,0 +1,165 @@
+/* CSS 파일 (styles.css) */
+
+ /* CSS 스타일링 */
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        .header-container {
+            background-image: url('image/make.jpg'); /* 배경 이미지 추가 */
+            background-size: 100% 100%; /* 배경 이미지를 커버하는 크기로 조절 */
+            margin-bottom: 0px;/*아래쪽여백*/
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
+            color: #d19108;
+            padding: 10px 20px;
+            font-size: 150%;
+            text-align: left; /* 변경된 부분 */
+            cursor: pointer; /* 추가된 부분: 마우스 커서를 포인터로 변경 */
+        }
+
+
+        
+
+/*ㅡㅡㅡㅡㅡㅡ메인메뉴 이름목록(공지사항,가이드북,스크린샷등등)ㅡㅡㅡㅡㅡㅡㅡ */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
+            padding: 120px 0;
+            text-align: center;/*메뉴들을 가운데로 정렬*/
+            margin-bottom: 0px;/*아래쪽여백*/
+        }
+        nav a {
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;/*아래쪽 라인없애기*/
+            padding: 30px 100px;
+            /*위쪽여백margin-top: 20px;*/
+            margin-bottom: 130px;/*아래쪽여백 */
+            
+        }
+        nav a:hover {
+            background-color: #555;
+            
+        }
+           /* 현재 선택된 메뉴에 대한 스타일 */
+         nav a.active {
+            background-color: #555;
+            
+        }
+        /* 화면 너비가 768px 이하인 경우 */
+        @media (max-width: 768px) {
+        nav a {
+            padding: 15px 20px; /* 링크의 상하 좌우 패딩을 줄임 */
+        }
+        }
+/*ㅡㅡㅡㅡㅡㅡ메인메뉴 이름목록(공지사항,가이드북,스크린샷등등)ㅡㅡㅡㅡㅡㅡㅡ */
+
+
+
+/*ㅡㅡㅡㅡㅡㅡ스크린샷html에서 사진목록 ㅡㅡㅡㅡㅡㅡㅡㅡ*/
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 4개의 열을 가진 그리드 */
+            grid-gap: 10px; /* 그리드 사이 간격 */
+            margin-bottom: 0px; /*아래쪽여백*/
+            margin-top: 0px;/*위쪽여백*/
+            
+            
+            
+        }
+        .gallery-item {
+            border: 1px solid #181717;
+            padding:  10px;
+            text-align: center;
+            
+
+        }
+        .gallery-item img {
+            max-width: 210%; /* 이미지 너비를 부모 요소에 맞춤 */
+            max-height: 185px; /* 이미지 최대 높이 제한 */
+            display: block;
+            margin: 0 auto; /* 이미지를 가운데 정렬 */
+            
+        }
+/*ㅡㅡㅡㅡㅡㅡ스크린샷html에서 사진목록 ㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+
+
+/*ㅡㅡㅡㅡㅡ다운로드 버튼 스타일 ㅡㅡㅡㅡㅡㅡ*/
+        section a.download-btn {
+            display: inline-block;
+            background-color: #8b4513; /* 갈색 배경색 */
+            color: #fff;
+            padding: 40px 50px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s; /* 배경색 변화를 부드럽게 만들기 위한 트랜지션 */
+        }
+        section a.download-btn:hover {
+            background-color: #654321; /* 마우스를 올릴 때의 배경색 */
+        }
+/*ㅡㅡㅡㅡㅡ다운로드 버튼 스타일 ㅡㅡㅡㅡㅡㅡ*/
+
+
+
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡ공지사항 글 스타일ㅡㅡㅡㅡㅡㅡㅡ*/
+        section {
+            text-align: center; /* 섹션 내의 요소들 가운데 정렬 */
+            padding: 20px;
+        }
+        .notice {
+            background-color: #000000;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+           margin-bottom: 520px; /*아래쪽여백*/
+            text-align: center;
+            
+        }
+        .notice h2 {
+            color: #666161;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .notice p {
+            font-size: 20px;
+            color: #cec4c4;
+        }
+/*ㅡㅡㅡㅡㅡㅡㅡ공지사항 글 스타일ㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+
+
+
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡ메인indax화면에 소개글 스타일ㅡㅡㅡㅡㅡㅡㅡㅡ*/
+        .main {
+            margin-bottom: 430px;
+            color: #a70505;
+            text-decoration: none;
+            padding: 50px 80px;
+            text-align: center;
+            font-size: 24px;
+        }
+/*ㅡㅡㅡㅡㅡㅡㅡㅡ메인indax화면에 소개글 스타일ㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡ맨밑에 사이트명 및 소개 스타일ㅡㅡㅡㅡㅡㅡㅡ*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*ㅡㅡㅡㅡㅡㅡㅡ맨밑에 사이트명 및 소개 스타일ㅡㅡㅡㅡㅡㅡㅡ*/

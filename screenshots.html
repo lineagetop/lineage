@@ -1,93 +1,14 @@
+<!-- 스크린샷 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리니지서버</title>
-    <style>
-        /* CSS 스타일링 */
-        body {
-            background-color: #000000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .header-container {
-            background-image: url('image/make.jpg'); /* 배경 이미지 추가 */
-            background-size: cover; /* 배경 이미지를 커버하는 크기로 조절 */
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
-            color: #fff;
-            padding: 10px 20px;
-            text-align: left; /* 변경된 부분 */
-            cursor: pointer; /* 추가된 부분: 마우스 커서를 포인터로 변경 */
-        }
-        nav {
-            background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
-            padding: 30px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 30px 40px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-           /* 현재 선택된 메뉴에 대한 스타일 */
-           nav a.active {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-         /* 추가된 부분 */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr); /* 4개의 열을 가진 그리드 */
-            grid-gap: 10px; /* 그리드 사이 간격 */
-            
-        }
-        .gallery-item {
-            border: 1px solid #181717;
-            padding: 10px;
-            text-align: center;
-            
-
-        }
-        .gallery-item img {
-            max-width: 50%; /* 이미지 너비를 부모 요소에 맞춤 */
-            max-height: 400px; /* 이미지 최대 높이 제한 */
-            display: block;
-            margin: 0 auto; /* 이미지를 가운데 정렬 */
-        }
-         /* 추가된 부분 */
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="header-container">
-        <header onclick="goHome()"> <!-- 클릭 시 goHome() 함수 호출 -->
-        <h1>Lineage</h1>
-    </header>
-    <nav>
-        <a href="notice.html" >공지사항</a>
-        <a href="guidebook.html" >게임가이드북</a>
-        <a href="screenshots.html" class="active">스크린샷</a>
-        <a href="forum.html">자유게시판</a>
-        <a href="download.html">다운로드</a>
-    </nav>
+    <div class="header-container" id="header-container">
 </div>
     
     <section class="gallery">
@@ -107,20 +28,28 @@
         <div class="gallery-item">
             <img src="image/r.bmp" alt="User 5 Screenshot">
         </div>
+        <div class="gallery-item">
+            <img src="image/bd.bmp" alt="User 6 Screenshot">
+        </div>
+        <div class="gallery-item">
+            <img src="image/jm.bmp" alt="User 7 Screenshot">
+        </div>
+        <div class="gallery-item">
+            <img src="image/gd.bmp" alt="User 8 Screenshot">
+        </div>        
+        <div class="gallery-item">
+            <img src="image/sd.bmp" alt="User 9 Screenshot">
+        </div>
+        <div class="gallery-item">
+            <img src="image/ss.bmp" alt="User 10 Screenshot">
+        </div>
+
         <!-- 추가적인 사용자 스크린샷들 -->
         <!-- 필요한 만큼 위의 div 요소를 복사하여 추가 -->
     </section>
 
 
-    <footer>
-        <p>© 2024 게임사이트. All rights reserved.</p>
-    </footer>
-
-     <!-- JavaScript 코드 추가 -->
-     <script>
-        function goHome() {
-            window.location.href = "index.html"; // 홈으로 이동
-        }
-    </script>
+ <!-- 외부 JavaScript 파일 연결 -->
+<script src="scripts.js"></script>
 </body>
 </html>
