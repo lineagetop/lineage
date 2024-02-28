@@ -1,4 +1,4 @@
-/* CSS 파일 (styles.css) */
+* CSS 파일 (styles.css) */
 
  /* CSS 스타일링 */
         body {
@@ -75,6 +75,7 @@
             grid-gap: 10px; /* 그리드 사이 간격 */
             margin-bottom: 0px; /*아래쪽여백*/
             margin-top: 0px;/*위쪽여백*/
+            margin-bottom: 230px; /*아래쪽여백*/
             
             
             
@@ -93,7 +94,7 @@
             margin: 0 auto; /* 이미지를 가운데 정렬 */
             
         }
- /* 모바일에서 열의 개수를 조정하여 최적화 */
+/* 모바일에서 열의 개수를 조정하여 최적화 */
          @media (max-width: 768px) {
         .gallery {
         grid-template-columns: repeat(3, 1fr); /* 3개의 열로 변경 */
@@ -105,6 +106,10 @@
 
 
 /*ㅡㅡㅡㅡㅡ다운로드 버튼 스타일 ㅡㅡㅡㅡㅡㅡ*/
+        .fulldownload {
+            margin-bottom: 330px; /*아래쪽여백*/
+        }
+
         section a.download-btn {
             display: inline-block;
             background-color: #8b4513; /* 갈색 배경색 */
@@ -133,7 +138,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 20px;
-           margin-bottom: 520px; /*아래쪽여백*/
+           margin-bottom: 230px; /*아래쪽여백*/
             text-align: center;
             
         }
@@ -156,7 +161,7 @@
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡ메인indax화면에 소개글 스타일ㅡㅡㅡㅡㅡㅡㅡㅡ*/
         .main {
-            margin-bottom: 430px;
+            margin-bottom: 230px; /*아래쪽여백*/
             color: #a70505;
             text-decoration: none;
             padding: 50px 80px;
