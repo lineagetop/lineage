@@ -28,7 +28,7 @@
 /*ㅡㅡㅡㅡㅡㅡ메인메뉴 이름목록(공지사항,가이드북,스크린샷등등)ㅡㅡㅡㅡㅡㅡㅡ */
         nav {
             background-color: rgba(0, 0, 0, 0.7); /* 배경 색상 및 투명도 추가 */
-            padding: 120px 0;
+            padding: 20px 0;
             text-align: center;/*메뉴들을 가운데로 정렬*/
             margin-bottom: 0px;/*아래쪽여백*/
         }
@@ -37,6 +37,7 @@
             font-size: 20px;
             text-decoration: none;/*아래쪽 라인없애기*/
             padding: 30px 100px;
+            display: inline-block; /* 인라인 요소로 변경하여 옆으로 배열 */
             /*위쪽여백margin-top: 20px;*/
             margin-bottom: 130px;/*아래쪽여백 */
             
@@ -52,8 +53,13 @@
         }
         /* 화면 너비가 768px 이하인 경우 */
         @media (max-width: 768px) {
+        nav {
+            padding: 10px 0px; /* 링크의 상하 좌우 패딩을 줄임 */
+            
+        }
         nav a {
-            padding: 15px 20px; /* 링크의 상하 좌우 패딩을 줄임 */
+            padding: 10px 20px; /* 더 작은 패딩 */
+            font-size: 14px; /* 더 작은 폰트 크기 */
         }
         }
 /*ㅡㅡㅡㅡㅡㅡ메인메뉴 이름목록(공지사항,가이드북,스크린샷등등)ㅡㅡㅡㅡㅡㅡㅡ */
