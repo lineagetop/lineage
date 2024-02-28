@@ -84,6 +84,8 @@
             border: 1px solid #181717;
             padding:  10px;
             text-align: center;
+            display: flex; /* 아이템을 수평 가운데 정렬하기 위해 flex 사용 */
+         align-items: center; /* 아이템을 수직 가운데 정렬하기 위해 flex 사용 */
             
 
         }
